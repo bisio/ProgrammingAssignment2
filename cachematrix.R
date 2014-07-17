@@ -22,7 +22,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## calculate and returns inverse of a matrix data structure (as returned by makeCacheMatrix).
+## Caches inverse for subsequent calls. i.e. called more than one time on the same argument 
+## returns the cached version of the result instead of computing it again.
 
 cacheSolve <- function(x, ...) {
         x.inv <- x$get.inv()
